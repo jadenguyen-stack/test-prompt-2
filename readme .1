@@ -1,0 +1,41 @@
+# 📂 04 — Review & Handoff
+
+**Business function:** Background Art Production — 2D Animation Studio  
+**Trigger:** P08 asset documentation completed and supervisor approval fields signed off  
+**Prompts in this section:** P09, P10
+
+---
+
+## Section Purpose
+
+The review and handoff section forms the final gate of the background production pipeline — conducting a structured quality checklist review across all previous pipeline outputs before formally handing the background off to the receiving department.  
+These two prompts ensure that no background leaves the department with unresolved pipeline issues, undocumented continuity dependencies, or missing sign-offs.  
+Together they create a formal, auditable handoff record that protects both the background department and receiving departments from downstream errors.
+
+## Chain Diagram
+```
+P08 asset documentation completed and approved
+      ↓
+[P09 RUNS — conducts final quality checklist review]
+      ↓
+PASS / CONDITIONAL PASS resolved → continues
+FAIL → returned to relevant pipeline stage for correction
+      ↓
+[P10 RUNS — generates formal handoff brief]
+      ↓
+Both departments sign off
+      ↓
+Background file transferred to receiving department
+```
+
+## Prompts
+
+| File | Prompt | Status |
+|------|--------|--------|
+| [P09-quality-checklist-review.md](P09-quality-checklist-review.md) | Quality Checklist Review | ✅ Tested |
+| [P10-handoff-brief.md](P10-handoff-brief.md) | Handoff Brief | ✅ Tested |
+
+---
+
+> 💡 **Tip:** Copy [TEMPLATE.md](TEMPLATE.md) and rename it for each of your prompts.  
+> Fill in every field — examiners will check all five required elements for each entry.
